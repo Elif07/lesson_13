@@ -1,0 +1,321 @@
+ body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      background: rgb(42, 84, 48);
+}
+.wrapper {
+      position: relative;
+      overflow: hidden;
+      min-width: 100%;
+}
+.header{
+      position: relative;
+      margin: 0 auto;
+      max-width: 900px;
+}
+.header__title {
+      font-size: 72px;
+      font-weight: 700;
+      color: white;
+      position: relative;
+            animation: title 3s normal ;
+            transition: all 8s ease;
+            opacity: 0.5;
+            visibility: hidden;
+}
+
+@keyframes title {
+      0% {
+      transform: scale(0);
+            visibility: visible;
+      }
+
+      100% {
+          transform: scale(1);
+            visibility: hidden;
+      }
+}
+.main {
+      
+}
+.container {
+      width: 1400px;
+     height: 800px;
+      background-color: rgb(46, 148, 56);
+      box-shadow: 1px 3px 118px 57px rgba(35, 56, 36, 1);
+      margin: 0 auto;
+      padding: 15px;    
+}
+.container__top {
+      width: 100px;
+      height: 100px;
+      background: rgb(18, 79, 14);
+      background: radial-gradient(circle, rgba(18, 79, 14, 1) 0%, rgba(1, 13, 1, 1) 100%);
+      border-radius: 50%;
+      transition: all 3s ease-in-out;
+      visibility: hidden;
+}
+.container__top--1 {
+      position: absolute;
+      animation: move-top--1 2s alternate 16;
+      transition: all 3s ease;
+}
+ @keyframes move-top--1 {
+      0% {
+            transform: translateX(0);
+            visibility: visible;
+      }
+      100% {
+            transform: translateX(1270px);
+            visibility: visible;
+      }
+}
+.container__top--2 {
+      position: relative;
+      animation: move-top--2 8s linear 5;
+      animation-delay: 32s;
+}
+@keyframes move-top--2 {
+      0% {
+           left: 0;
+           top: 0;
+            visibility: visible;
+      }
+      20% {
+            left: 1270px;
+            top: 0;
+            visibility: visible;
+      }
+      50% {
+            left: 1270px;
+            top: 670px;
+            visibility: visible;
+      }
+      80% {
+            left: 0;
+            top: 670px;
+            visibility: visible;
+      }
+      100% {
+            left: 0;
+            top: 0;
+            visibility: visible;
+      }
+} 
+.container__top--3 {
+      position: relative;
+      animation: move-top--3 8s linear 5;
+      animation-delay: 72s;
+}
+
+@keyframes move-top--3 {
+      0% {
+            left: 0px;
+            top: -100px;
+            visibility: visible;
+      }
+
+      20% {
+            left: 0;
+            top: 570px;
+            visibility: visible;
+      }
+
+      50% {
+            left: 1270px;
+            top: 570px;
+            visibility: visible;
+      }
+
+      80% {
+            left: 1270px;
+            top: -100px;
+            visibility: visible;
+      }
+
+      100% {
+            left: 0px;
+            top: -100px;
+            visibility: visible;
+      }
+}
+.container__top--4 {
+      position: absolute;
+      animation: move-top--4 2s alternate 16;
+      transition: all 3s ease;
+      animation-delay: 112s;
+}
+
+@keyframes move-top--4 {
+      0% {
+           left: 47%;
+           top: 80px;
+            visibility: visible;
+      }
+      100% {
+            left: 48%;
+            top: 760px;
+            visibility: visible;
+      }
+}
+.container__top--5 {
+      position: relative;
+      animation: move-top--5 2s alternate 16;
+      transition: all 3s ease;
+      animation-delay: 144s;
+}
+
+@keyframes move-top--5 {
+      0% {
+            left: 0;
+            top: -200px;
+            visibility: visible;
+      }
+
+      100% {
+            left: 1270px;
+            top: 470px;
+            visibility: visible;
+      }
+}
+.container__top--6 {
+      position: relative;
+      animation: move-top--6 2s alternate 16;
+      transition: all 3s ease;
+      animation-delay: 177s;
+}
+
+@keyframes move-top--6 {
+      0% {
+            left: 1270px;
+            top: -300px;
+            visibility: visible;
+      }
+      100% {
+            left: 0;
+            top: 370px;
+            visibility: visible;
+      }
+}
+.container__top--7 {
+      position: relative;
+      animation: move-top--7 4s normal 8;
+      transition: all 3s ease;
+      animation-delay: 210s;
+}
+
+@keyframes move-top--7 {
+      0% {
+            left: 0;
+            top: -400px;
+            visibility: visible;
+      }
+      25% {
+            left: 1265px;
+            top: -400px;
+            visibility: visible;
+      }
+      45% {
+            left: 0;
+            top: 275px;
+            visibility: visible;
+      }
+      70% {
+            left: 1265px;
+            top: 275px;
+            visibility: visible;
+      }
+      100% {
+            left: 0;
+            top: -400px;
+            visibility: visible;
+      }
+}
+.container__top--8 {
+      position: relative;
+      animation: move-top--8 4s normal 8;
+      transition: all 3s ease;
+      animation-delay: 242s;
+}
+
+@keyframes move-top--8 {
+      0% {
+            left: 1265px;
+            top: -500px;
+            visibility: visible;
+      }
+      25% {
+            left: 0;
+            top: -500px;
+            visibility: visible;
+      }
+      45% {
+            left: 1265px;
+            top: 170px;
+            visibility: visible;
+      }
+      70% {
+            left: 0;
+            top: 170px;
+            visibility: visible;
+      }
+      100% {
+            left: 1265px;
+            top: -500px;
+            visibility: visible;
+      }
+}
+.container__top--9 {
+      position: relative;
+      animation: move-top--9 4s alternate 15;
+      transition: all 3s ease;
+      animation-delay: 274s;
+}
+
+@keyframes move-top--9 {
+      0% {
+            top: -260px;
+            left: 620px;
+            transform: scale(0.1);
+            visibility: visible;
+      }
+      100% {
+            top: -260px;
+            left: 620px;
+            transform: scale(7.5);
+            visibility: visible;
+      }
+}
+.container__top--10 {
+      position: relative;
+      animation: move-top--10 5s alternate 8;
+      transition: all 3s ease-in-out;
+      animation-delay: 335s;
+}
+@keyframes move-top--10 {
+      0% {
+            top: -20px;
+            left: 0;
+            visibility: visible;
+      }
+      25% {
+            top: -700px;
+            left: 317px;
+            visibility: visible;
+      }
+      45% {
+            top: -20px;
+            left: 620px;
+            visibility: visible;
+      }
+      75% {
+            top: -700px;
+            left: 953px;
+            visibility: visible;
+      }
+      100% {
+            top: -20px;
+            left: 1270px;
+            visibility: visible;
+      }
+ }
